@@ -1,4 +1,4 @@
-package com.raphaelsilva.credit.system.dto
+package com.raphaelsilva.credit.system.dto.request
 
 import com.raphaelsilva.credit.system.entity.Credit
 import com.raphaelsilva.credit.system.entity.Customer

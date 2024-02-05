@@ -15,63 +15,6 @@ Back-End de um App de empréstimo bancário.
 O projeto permite criar clientes, onde cada cliente pode fazer uma solicitação de empréstimo, verificar todos os 
 seus empréstimos e analisar um empréstimo específico com mais detalhes.
 
-## ↔️ End-Points
-
-### Cliente
-#### Criar
-    Método: post
-    Rota: /api/customers
-    Body:
-    {
-        "firstName": String,
-        "lastName": String,
-        "document": String,
-        "income": BigDecimal,
-        "email": String,
-        "password": Stirng,
-        "zipCode": String,
-        "street": String
-    }
-
-#### Retornar
-    Método: get
-    Rota: /api/customers/{id}
-
-#### Atualizar
-    Método: patch
-    Rota: /api/customers
-    Body:
-    {
-        "firstName": String,
-        "lastName": String,
-        "income": BigDecimal,
-        "zipCode": String,
-        "street": String
-    }
-
-#### Remover
-    Método: delete
-    Rota: /api/customers/{id}
-
-### Empréstimo
-#### Criar
-    Método: post
-    Rota: /api/credits
-    Body:
-    {
-        "creditValue": BigDecimal,
-        "dayFirstOfInstallment": LocalDate,
-        "numberOfInstallments": Int,
-        "customerId": Long
-    }
-
-#### Retornar por Cliente
-    Método: get
-    Rota: /api/credits?customerId={id}
-
-#### Retornar por Código do Empréstimo
-    Método: get
-    Rota: /api/credits/{código}?customerId={id}
 
 ## 🛠️ Técnicas e tecnologias utilizadas
  - `Spring Boot` 
@@ -82,7 +25,13 @@ seus empréstimos e analisar um empréstimo específico com mais detalhes.
  - `Flyway`
  - `Tratamento de Exceções customizadas`
  - `Validação de campos`
+ - `Springdoc Openapi`
+ - `Swagger`
 
+## 📑 Documentação
+Para acessar a documentação, basta rodar o projeto e acessar "http://localhost:8080/", irá ser redirecionado para a 
+documentação do Swagger, contendo todos os EndPoints e suas utilizações, podendo fazer testes pelo mesmo, além de 
+encontrar o link para accessar o banco de dados.
 
 <div align="center">
 Feito por Raphael da Silva 🚀 <br/>

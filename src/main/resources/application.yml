@@ -13,3 +13,10 @@ spring:
       settings:
         trace: false
         web-allow-others: false
+springdoc:
+  swagger-ui:
+    groups-order: DESC
+    operationsSorter: method
+    disable_swagger-default-url: true
+    use-root-path: true
+    default-models-expand-depth: -1

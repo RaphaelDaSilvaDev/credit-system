@@ -1,4 +1,4 @@
-package com.raphaelsilva.credit.system.dto
+package com.raphaelsilva.credit.system.dto.response
 
 import com.raphaelsilva.credit.system.entity.Customer
 import java.math.BigDecimal
